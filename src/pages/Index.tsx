@@ -4,6 +4,8 @@ import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import SkillsSection from "@/components/SkillsSection";
 import ProjectsSection from "@/components/ProjectsSection";
+import EducationSection from "@/components/EducationSection";
+import ResponsibilitySection from "@/components/ResponsibilitySection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
@@ -29,7 +31,7 @@ const Index = () => {
   // Handle scroll spy for active section
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "skills", "projects", "contact"];
+      const sections = ["home", "about", "skills", "projects", "education", "responsibilities", "contact"];
       const scrollPosition = window.scrollY + 100;
 
       for (let i = sections.length - 1; i >= 0; i--) {
@@ -74,6 +76,14 @@ const Index = () => {
         
         <section id="projects">
           <ProjectsSection />
+        </section>
+        
+        <section id="education">
+          <EducationSection />
+        </section>
+        
+        <section id="responsibilities">
+          <ResponsibilitySection />
         </section>
         
         <section id="contact">

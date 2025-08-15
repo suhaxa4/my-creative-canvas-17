@@ -6,55 +6,37 @@ import { ExternalLink, Github, ArrowRight } from "lucide-react";
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.",
-      image: "🛒",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe"],
+      title: "Threat Detection Through Honeypot Data",
+      description: "Developed a cloud-hosted honeypot using React.js, Node.js, MongoDB, and Cowrie Honeypot for real-time threat intelligence visualization with API integration (OTX, AbuseIPDB).",
+      image: "🛡️",
+      technologies: ["React.js", "Node.js", "MongoDB", "Cowrie"],
       liveUrl: "#",
       githubUrl: "#",
       featured: true
     },
     {
-      title: "Task Management App",
-      description: "Collaborative project management tool with real-time updates, team collaboration, and analytics.",
-      image: "📋",
-      technologies: ["Next.js", "TypeScript", "Prisma", "Socket.io"],
+      title: "Honeypot Deployment on NVR Systems",
+      description: "Deployed honeypots for SSH, HTTP, RTSP, and ONVIF protocols to simulate vulnerable NVR IoT devices. Dockerized for scalable deployment with comprehensive log aggregation.",
+      image: "📹",
+      technologies: ["Docker", "SSH", "HTTP", "ONVIF"],
       liveUrl: "#",
       githubUrl: "#",
       featured: true
     },
     {
-      title: "Weather Dashboard",
-      description: "Beautiful weather application with location-based forecasts, interactive maps, and data visualization.",
-      image: "🌤️",
-      technologies: ["React", "Chart.js", "Weather API", "Tailwind"],
+      title: "HID Device Emulation Attack",
+      description: "Programmed an Arduino to emulate a Human Interface Device (HID) for keystroke injection attacks, establishing reverse connections with Metasploit and HoaxShell.",
+      image: "🔧",
+      technologies: ["Arduino", "Metasploit", "HoaxShell", "HID"],
       liveUrl: "#",
       githubUrl: "#",
       featured: false
     },
     {
-      title: "Portfolio Website",
-      description: "Modern, responsive portfolio website with smooth animations and optimized performance.",
-      image: "💼",
-      technologies: ["React", "Framer Motion", "Tailwind", "Vite"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
-    },
-    {
-      title: "Social Media Dashboard",
-      description: "Analytics dashboard for social media management with data visualization and scheduling features.",
-      image: "📊",
-      technologies: ["Vue.js", "Python", "FastAPI", "Chart.js"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
-    },
-    {
-      title: "AI Chat Bot",
-      description: "Intelligent chatbot with natural language processing and machine learning capabilities.",
-      image: "🤖",
-      technologies: ["Python", "TensorFlow", "Flask", "OpenAI"],
+      title: "Cisco Network Security Solution",
+      description: "Developed network security policies and ACLs to address campus resource misuse by restricting access to irrelevant websites using Cisco Packet Tracer.",
+      image: "🌐",
+      technologies: ["Cisco Packet Tracer", "ACLs", "Network Policies"],
       liveUrl: "#",
       githubUrl: "#",
       featured: false

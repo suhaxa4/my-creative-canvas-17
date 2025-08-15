@@ -15,58 +15,58 @@ import {
 const SkillsSection = () => {
   const skillCategories = [
     {
-      title: "Frontend Development",
+      title: "Programming & Scripting",
       icon: Code,
       color: "text-tech-accent",
       skills: [
-        { name: "React/Next.js", level: 90 },
-        { name: "TypeScript", level: 85 },
-        { name: "Tailwind CSS", level: 95 },
-        { name: "JavaScript", level: 90 }
+        { name: "Python", level: 85 },
+        { name: "Java (Basic)", level: 65 },
+        { name: "Shell Scripting", level: 80 },
+        { name: "JavaScript", level: 70 }
       ]
     },
     {
-      title: "Backend Development",
+      title: "Cybersecurity Tools",
       icon: Database,
       color: "text-success-accent",
       skills: [
-        { name: "Node.js", level: 85 },
-        { name: "Python", level: 80 },
-        { name: "PostgreSQL", level: 85 },
-        { name: "MongoDB", level: 75 }
+        { name: "Burp Suite", level: 85 },
+        { name: "Wireshark", level: 80 },
+        { name: "Nmap", level: 85 },
+        { name: "Wazuh", level: 75 }
       ]
     },
     {
-      title: "DevOps & Cloud",
+      title: "Reconnaissance & Scanning",
       icon: Cloud,
       color: "text-warning-accent",
       skills: [
-        { name: "AWS", level: 75 },
-        { name: "Docker", level: 80 },
-        { name: "CI/CD", level: 70 },
-        { name: "Linux", level: 85 }
+        { name: "Footprinting", level: 80 },
+        { name: "Network Scanning", level: 85 },
+        { name: "Web App Scanning", level: 80 },
+        { name: "Vulnerability Assessment", level: 75 }
       ]
     },
     {
-      title: "Design & UX",
+      title: "Security Technologies",
       icon: Palette,
       color: "text-primary",
       skills: [
-        { name: "UI/UX Design", level: 85 },
-        { name: "Figma", level: 90 },
-        { name: "Responsive Design", level: 95 },
-        { name: "User Research", level: 70 }
+        { name: "Honeypots", level: 90 },
+        { name: "Digital Forensics", level: 80 },
+        { name: "Threat Detection", level: 85 },
+        { name: "IoT Security", level: 75 }
       ]
     }
   ];
 
   const tools = [
-    { name: "VS Code", icon: Code },
-    { name: "Git", icon: GitBranch },
-    { name: "Figma", icon: Palette },
-    { name: "Postman", icon: Zap },
-    { name: "Vercel", icon: Globe },
-    { name: "Mobile Dev", icon: Smartphone }
+    { name: "Cowrie", icon: Code },
+    { name: "Metasploit", icon: GitBranch },
+    { name: "HoaxShell", icon: Palette },
+    { name: "Docker", icon: Zap },
+    { name: "MongoDB", icon: Globe },
+    { name: "Arduino", icon: Smartphone }
   ];
 
   return (
@@ -136,16 +136,13 @@ const SkillsSection = () => {
           <h3 className="text-2xl font-semibold mb-6">Certifications</h3>
           <div className="flex flex-wrap justify-center gap-3">
             <Badge variant="outline" className="px-4 py-2 text-sm">
-              AWS Cloud Practitioner
+              Introduction to Cyber Security (Cisco)
             </Badge>
             <Badge variant="outline" className="px-4 py-2 text-sm">
-              React Developer Certification
+              Cyber Security Essentials (Cisco)
             </Badge>
             <Badge variant="outline" className="px-4 py-2 text-sm">
-              Google Analytics Certified
-            </Badge>
-            <Badge variant="outline" className="px-4 py-2 text-sm">
-              Scrum Master
+              Introduction to Packet Tracer (Cisco)
             </Badge>
           </div>
         </div>

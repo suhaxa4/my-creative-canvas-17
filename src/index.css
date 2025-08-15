@@ -8,49 +8,49 @@
 
 @layer base {
   :root {
-    /* Modern Portfolio Color Palette */
-    --background: 240 10% 4%;
-    --foreground: 0 0% 98%;
+    /* Professional Cybersecurity Color Palette */
+    --background: 210 30% 8%;
+    --foreground: 210 10% 98%;
 
-    --card: 240 10% 6%;
-    --card-foreground: 0 0% 98%;
+    --card: 210 25% 10%;
+    --card-foreground: 210 10% 98%;
 
-    --popover: 240 10% 6%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 210 25% 10%;
+    --popover-foreground: 210 10% 98%;
 
-    --primary: 260 100% 65%;
+    --primary: 215 85% 50%;
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 240 10% 12%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 210 20% 15%;
+    --secondary-foreground: 210 10% 98%;
 
-    --muted: 240 10% 8%;
-    --muted-foreground: 240 5% 65%;
+    --muted: 210 25% 12%;
+    --muted-foreground: 210 15% 65%;
 
-    --accent: 280 100% 70%;
+    --accent: 200 85% 55%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 240 10% 15%;
-    --input: 240 10% 8%;
-    --ring: 260 100% 65%;
+    --border: 210 20% 20%;
+    --input: 210 25% 12%;
+    --ring: 215 85% 50%;
 
     --radius: 0.75rem;
 
-    /* Portfolio Specific Colors */
-    --hero-gradient-start: 260 100% 65%;
-    --hero-gradient-middle: 280 100% 70%;
-    --hero-gradient-end: 320 100% 60%;
+    /* Professional Cybersecurity Colors */
+    --hero-gradient-start: 215 85% 50%;
+    --hero-gradient-middle: 205 80% 45%;
+    --hero-gradient-end: 195 75% 40%;
     
-    --glass-bg: 240 10% 6%;
-    --glass-border: 240 10% 15%;
+    --glass-bg: 210 25% 10%;
+    --glass-border: 210 20% 20%;
     
-    /* Accent Colors */
-    --tech-accent: 200 100% 60%;
-    --success-accent: 120 100% 50%;
-    --warning-accent: 45 100% 60%;
+    /* Professional Accent Colors */
+    --tech-accent: 195 85% 55%;
+    --success-accent: 145 70% 50%;
+    --warning-accent: 35 85% 60%;
 
     --sidebar-background: 0 0% 98%;
 

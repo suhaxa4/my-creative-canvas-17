@@ -22,12 +22,12 @@ const HeroSection = () => {
             </h1>
             
             <h2 className="text-2xl md:text-3xl font-semibold text-muted-foreground mb-6">
-              Full Stack Developer & Designer
+              Cybersecurity Student & Threat Detection Specialist
             </h2>
             
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
-              Passionate about creating beautiful, functional web applications that make a difference. 
-              I combine creativity with technical expertise to build exceptional digital experiences.
+              Focused on strengthening digital defenses and safeguarding critical infrastructure through 
+              hands-on experience in threat detection, vulnerability assessment, and digital forensics.
             </p>
 
             {/* CTA Buttons */}
@@ -58,16 +58,16 @@ const HeroSection = () => {
           {/* Stats Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 animate-slide-up">
             <Card className="bg-glass p-6 text-center hover:scale-105 transition-transform duration-300">
-              <div className="text-3xl font-bold text-primary mb-2">50+</div>
-              <div className="text-muted-foreground">Projects Completed</div>
+              <div className="text-3xl font-bold text-primary mb-2">4+</div>
+              <div className="text-muted-foreground">Security Projects</div>
+            </Card>
+            <Card className="bg-glass p-6 text-center hover:scale-105 transition-transform duration-300">
+              <div className="text-3xl font-bold text-primary mb-2">7.75</div>
+              <div className="text-muted-foreground">Academic CGPA</div>
             </Card>
             <Card className="bg-glass p-6 text-center hover:scale-105 transition-transform duration-300">
               <div className="text-3xl font-bold text-primary mb-2">3+</div>
-              <div className="text-muted-foreground">Years Experience</div>
-            </Card>
-            <Card className="bg-glass p-6 text-center hover:scale-105 transition-transform duration-300">
-              <div className="text-3xl font-bold text-primary mb-2">100%</div>
-              <div className="text-muted-foreground">Client Satisfaction</div>
+              <div className="text-muted-foreground">Certifications</div>
             </Card>
           </div>
         </div>
