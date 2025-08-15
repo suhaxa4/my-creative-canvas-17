@@ -18,6 +18,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				inter: ['Inter', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -52,6 +55,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				'hero-gradient-start': 'hsl(var(--hero-gradient-start))',
+				'hero-gradient-middle': 'hsl(var(--hero-gradient-middle))',
+				'hero-gradient-end': 'hsl(var(--hero-gradient-end))',
+				'tech-accent': 'hsl(var(--tech-accent))',
+				'success-accent': 'hsl(var(--success-accent))',
+				'warning-accent': 'hsl(var(--warning-accent))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',

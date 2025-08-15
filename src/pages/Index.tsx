@@ -1,12 +1,87 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState, useEffect } from "react";
+import Navigation from "@/components/Navigation";
+import HeroSection from "@/components/HeroSection";
+import AboutSection from "@/components/AboutSection";
+import SkillsSection from "@/components/SkillsSection";
+import ProjectsSection from "@/components/ProjectsSection";
+import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
+  const [activeSection, setActiveSection] = useState("home");
+
+  // Handle section scrolling
+  const scrollToSection = (sectionId: string) => {
+    setActiveSection(sectionId);
+    
+    if (sectionId === "home") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
+
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const offsetTop = element.offsetTop - 80; // Account for fixed header
+      window.scrollTo({ top: offsetTop, behavior: "smooth" });
+    }
+  };
+
+  // Handle scroll spy for active section
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ["home", "about", "skills", "projects", "contact"];
+      const scrollPosition = window.scrollY + 100;
+
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = sections[i];
+        const element = section === "home" ? 
+          document.body : 
+          document.getElementById(section);
+        
+        if (element) {
+          const offsetTop = section === "home" ? 0 : element.offsetTop;
+          if (scrollPosition >= offsetTop) {
+            setActiveSection(section);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <Navigation 
+        activeSection={activeSection} 
+        onSectionChange={scrollToSection} 
+      />
+      
+      <main>
+        <section id="home">
+          <HeroSection />
+        </section>
+        
+        <section id="about">
+          <AboutSection />
+        </section>
+        
+        <section id="skills">
+          <SkillsSection />
+        </section>
+        
+        <section id="projects">
+          <ProjectsSection />
+        </section>
+        
+        <section id="contact">
+          <ContactSection />
+        </section>
+      </main>
+      
+      <Footer />
     </div>
   );
 };
