@@ -15,6 +15,8 @@ const Footer = () => {
     { label: "About", href: "#about" },
     { label: "Skills", href: "#skills" },
     { label: "Projects", href: "#projects" },
+    { label: "Education", href: "#education" },
+    { label: "Leadership", href: "#responsibilities" },
     { label: "Contact", href: "#contact" }
   ];
 
@@ -24,9 +26,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <h3 className="text-xl font-bold text-gradient mb-4">Your Name</h3>
+            <h3 className="text-xl font-bold text-gradient mb-4">Cybersecurity Professional</h3>
             <p className="text-muted-foreground mb-4">
-              Full Stack Developer passionate about creating exceptional digital experiences.
+              Passionate about strengthening digital defenses and safeguarding critical infrastructure.
             </p>
             <div className="flex space-x-2">
               {socialLinks.map((social, index) => {
